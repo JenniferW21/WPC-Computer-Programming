@@ -1,0 +1,19 @@
+.gallery-container {
+  max-width: 500px;
+  margin: 20px auto; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery-content .image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.image-gallery-thumbnails-wrapper {
+  padding: 10px 0;
+}
