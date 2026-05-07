@@ -1,0 +1,22 @@
+/* style nav bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  background-color:#1a2842;
+  display: flex;          
+  justify-content: center;
+}
+
+
+ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+}
+
+ul li a:hover {
+  background-color: rgb(24, 28, 29);
+}

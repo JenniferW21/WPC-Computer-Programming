@@ -5,8 +5,8 @@ function Interest({hobbies}) {
   return (
     <>
       <Heading type="blue" title="Interest & Hobbies"/>
-      
-      <div className="card-container">
+    <div className="flex-container">
+      <div className="container">
         {hobbies.map((hobby, index) => (
           <Card 
             key={index} 
@@ -15,6 +15,7 @@ function Interest({hobbies}) {
             description={hobby.description}
           />
         ))}
+      </div>
           
     </div>
     </>

@@ -3,7 +3,11 @@ import Heading from "./Heading";
 import myImage1 from './assets/videogame.png';
 import myImage2 from './assets/homescreen.png';
 import myImage3 from './assets/losescreen.png';
-import braille from './assets/braille.jpg'
+import braille from './assets/braille.jpg';
+import originalText from './assets/originaltxt.png';
+import encodedText from './assets/encodedtxt.png';
+
+
 //project 1
 const project1 = [
   {
@@ -28,20 +32,21 @@ const project1 = [
 //project 2
 const project2 = [
   {
-    original: null,
-    thumbnail: null,
-    description: "Greta Thunberg is a Swedish activist that spreads awareness to fight climate. She not only makes speeches, but she is vegan, she composts, and she only travels by boat and train. Thunberg does make a difference by using her words to explain the dangers of climate change, however, her audience will save the world more effectively when they follow her actions."
+    original: originalText,
+    thumbnail: originalText,
+    description: "Before: Original Text",
+    // link: "https://github.com/JenniferW21/EncryptionProject_JenniferWang/tree/main/EncryptionProject"
   },
   {
-    original: myImage1,
-    thumbnail: myImage1,
-    description: "Goal: Collect Food",
+    original: encodedText,
+    thumbnail: encodedText,
+    description: "After: Substitution, String Manipulation, Round Robbin Shift",
   },
 
   {
     original: braille,
     thumbnail: braille,
-    description: "Substitution"
+    description: "Substitution: Braille Character"
     
   },
 ];
@@ -50,24 +55,18 @@ function Projects() {
   return (
     <>      
       <Heading type="blue" title="Projects"/>
-
-      <div className="flex-container">
-        <MyGallery images={project1} />
-        <MyGallery images={project2} />
-
-        {/* Project 2: Encryption */}
-        <span> 
-          <a href="https://github.com/JenniferW21/EncryptionProject_JenniferWang/tree/main/EncryptionProject" target="_blank">
-            <h3>11th: Secret Decoder Ringer</h3>
-          </a>
-          <p>The Secret Decoder Ring Project is to encrypt and decrypt a text message.</p>
-          <ol>
-            <li>String Manipulation: Reverse the text</li>
-            <li>Substitution: Braille characters</li>
-            <li>Round Robin Shift: ASCII shifting</li>
-          </ol>
-        </span>
-
+      <div className="container">
+        
+        <div className="flex-container">
+          <span>
+            <h3>9th Grade: Video game</h3>
+            <MyGallery images={project1} />
+          </span>
+          <span>
+            <h3>11th Grade: Secret Decoder Ring</h3>
+            <MyGallery images={project2} />
+          </span>
+        </div>
       </div>
     </>
   )

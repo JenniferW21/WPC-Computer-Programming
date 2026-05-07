@@ -2,7 +2,7 @@ import Heading from "./Heading";
 
 function Head(){
   return (
-    <div className="container"> 
+    <div> 
       <Heading type="black" title="ABOUT ME"/>
     </div>
   )

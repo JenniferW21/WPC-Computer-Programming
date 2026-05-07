@@ -1,7 +1,8 @@
 import Head from "./Head";
 import Body from "./Body";
+import Nav from "./Nav";
 import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function Home() {
@@ -13,23 +14,15 @@ function Home() {
 function App() {
   return (
     <>
-    <Head/>
-    <BrowserRouter>
-     <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/body">About Me</Link>
-        </li>
-      </ul>  
+      <Head/>
+      <BrowserRouter>
+        <Nav />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/body" element={<Body />} />
-      </Routes>
-    </BrowserRouter>
-    
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/body" element={<Body />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
