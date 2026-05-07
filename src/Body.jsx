@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import myPiano from './assets/piano.jpeg'
 import myAcrylic from './assets/acrylic.jpeg'
 import myPonyo from './assets/Ponyo.jpeg'
+import './App.css'
 
 function Body(){
   const myHobbies = [
@@ -19,7 +20,10 @@ function Body(){
       <Intro name="Jennifer"/>
       <Resume />
       <Projects />
-      <Interest hobbies={myHobbies}/>
+      <div className="colorContainer">
+        <Interest hobbies={myHobbies}/>
+      </div>
+      
     </div>
 
     <div>

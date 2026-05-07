@@ -1,21 +1,28 @@
 const styles = {
 
     black: { 
-      backgroundColor: 'rgb(22, 28, 46)', 
-      color:"rgb(230, 229, 218)", 
+      color:"#051319", 
       fontSize:"30px", 
-      padding:"20px",
-      border: "5px solid rgb(22,28,46)"},
+      padding:"100px",
+      },
 
     blue: { 
-      backgroundColor: 'rgb(91, 131, 171)', 
+      // backgroundColor: 'rgb(91, 131, 171)', 
       fontSize:"25px", 
-      padding:"5px",
-      border: "5px solid rgb(91, 131, 171)"},
+      padding:"20px",
+      textAlign: "left",
+      },
   };
 
-function Heading({ type, title }) {
-  return <div style={styles[type]}><h2>{title}</h2></div>;
+function Heading({ type, title }) { 
+  return (
+    <>
+      <div style={styles[type]}>
+        <h2>{title}</h2>
+      </div>
+    </>
+
+  );
 }
 
 export default Heading;

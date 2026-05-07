@@ -8,7 +8,7 @@ function Resume(){
   return (
     <>
     <div style={myStyle} className="heading">
-      <Button fileName={myResume} type="blue" label="Download Resume" />
+      <Button fileName={myResume} label="Download Resume" />
     </div>
     </>
   );

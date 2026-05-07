@@ -18,3 +18,4 @@ function MyGallery({images}) {
 }
 
 export default MyGallery;
+

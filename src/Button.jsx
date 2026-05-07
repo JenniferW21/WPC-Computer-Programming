@@ -1,30 +1,25 @@
-function Button({ type, fileName, label, onClick}){
+function Button({ fileName, label, onClick}){
   const style={
-    border:"1px solid rgb(22, 28, 46)",
+    backgroundColor: "#2D3A6E",
+    border:"1px solid #051319",
     color: "white",
     padding: "15px 32px",
     textDecoration: "none",
     display: "inline-block",
-    boxShadow: "5px 5px rgb(22, 28, 46)",
-    cursor: "pointer"
+    boxShadow: "0 2px 2px #2D3A6E",
+    cursor: "pointer",
+    borderRadius: "4px",
   }
 
-  const buttoncolor = {
-    blue: { backgroundColor: "rgb(91, 131, 171)" },
-    lightblue: { backgroundColor: "rgb(164, 186, 208)" }
-  };
-
-
-  const buttonstyle = { ...style, ...buttoncolor[type] };
 
  
   if(fileName){
     return (
-        <a href={fileName} download style={buttonstyle}>{label}</a>
+        <a href={fileName} download style={style}>{label}</a>
     );
   }
     return (
-    <button onClick={onClick} style={buttonstyle}>
+    <button onClick={onClick} style={style}>
       {label}
     </button>
     );

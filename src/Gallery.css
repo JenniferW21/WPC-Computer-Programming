@@ -7,7 +7,7 @@
 .image-gallery-slide .image-gallery-image {
   height: 400px;      
   object-fit: contain;
-  background-color: #1a1a1a; 
+  background-color: transparent; 
 }
 
 
