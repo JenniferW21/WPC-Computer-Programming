@@ -1,18 +1,15 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Head from "./Head";
 import Body from "./Body";
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-function Home() {
-  return <h1>Home Page</h1>;
-}
+import Home from "./Home";
 
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>     
+      <BrowserRouter basename="/WPC_Programming">     
         <Head/> 
         <Routes>
           <Route path="/" element={<Home />} />

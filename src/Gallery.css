@@ -3,35 +3,31 @@
   margin: 0 auto;
 }
 
+.image-gallery-description {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 20px !important;
+  left: 34px !important;
+}
+
 
 .image-gallery-slide .image-gallery-image {
-  height: 400px;      
+  height: 400px; 
+  width:550px;
   object-fit: contain;
   background-color: transparent; 
+  
 }
 
 
 .image-gallery-thumbnail .image-gallery-thumbnail-image {
-  height: 60px;
+  height: auto;
   object-fit: cover;
 }
 
 
-.image-gallery, 
-.image-gallery-content, 
-.image-gallery-thumbnails-wrapper {
-  background: transparent !important;
-  padding-bottom: 0 !important;
-}
-
-
-.image-gallery-description {
-  background: rgba(0, 0, 0, 0.7) !important;
-  bottom: 15px !important;
-}
 
 .image-gallery-play-button {
   left: 20px !important;
   bottom: auto !important;
-  top: 20px !important;
+  /* top: 20px !important; */
 }

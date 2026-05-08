@@ -6,7 +6,7 @@ body {
 }
 
 .gradient{
-  background: linear-gradient(13deg, #aeb5df 0%, #C9CEEC 20%, #EFF0F9 100%)
+  background: linear-gradient(13deg, #747aa1 0%, #C9CEEC 20%, #EFF0F9 100%)
 }
 .container {
   display: flex;          
@@ -27,7 +27,6 @@ body {
 .flex-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
   width: 100%;
 }
 
@@ -39,7 +38,7 @@ body {
 
 .description {
   font-size: 16px;
-  color: rgb(24, 28, 29);
+  color: #051319;
   margin-top: 10px;
 }
 

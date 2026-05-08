@@ -1,8 +1,8 @@
 
 const myStyle ={
-    backgroundColor: "rgb(24, 28, 29)", 
-    border: "5px solid rgb(24, 28, 29)",
-    color:"rgb(230, 229, 218)",
+    backgroundColor: "#051319 ", 
+    // border: "5px solid rgb(24, 28, 29)",
+    color:"#EFF0F9",
     padding:"10px"
 }
 

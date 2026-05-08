@@ -4,13 +4,14 @@ const styles = {
       color:"#051319", 
       fontSize:"30px", 
       padding:"100px",
+  
       },
 
     blue: { 
-      // backgroundColor: 'rgb(91, 131, 171)', 
       fontSize:"25px", 
-      padding:"20px",
+      paddingLeft: "70px",
       textAlign: "left",
+
       },
   };
 

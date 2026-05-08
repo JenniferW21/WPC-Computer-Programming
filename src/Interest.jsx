@@ -5,7 +5,7 @@ function Interest({hobbies}) {
   return (
     <>
       <Heading type="blue" title="Interest & Hobbies"/>
-    <div className="flex-container">
+    <div className="flex-container" style={{ paddingBottom: "40px"}}>
       <div className="container">
         {hobbies.map((hobby, index) => (
           <Card 
