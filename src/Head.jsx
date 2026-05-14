@@ -3,11 +3,11 @@ import Nav from "./Nav";
 import './App.css'
 
 
-function Head(){
+function Head({title}){
   return (
     <div className="gradient"> 
       <Nav />
-      <Heading type="black" title="ABOUT ME"/>
+      <Heading type="black" title={title}/>
     </div>
   )
 }

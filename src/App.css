@@ -1,33 +1,48 @@
 body {
-  font-family: Slab-Serif;
+  font-family: 'Slab-Serif', serif;
   text-align: center;
   background-color: #EFF0F9;
-  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
 }
 
 .gradient{
-  background: linear-gradient(13deg, #747aa1 0%, #C9CEEC 20%, #EFF0F9 100%)
+  background: linear-gradient(13deg, #9aa1cf 0%, #C9CEEC 20%, #EFF0F9 100%)
 }
+
 .container {
-  display: flex;          
-  flex-wrap: wrap;      
-  justify-content: center; 
-  gap: 20px;             
-  width: 100%;       
-}
-.colorContainer {
-  display: flex;          
-  flex-wrap: wrap;      
-  gap: 20px;             
-  width: 100%; 
-  background-color: #C9CEEC;       
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 
 .flex-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+}
+
+.flex-container span {
+  padding: 20px;
+  flex: 1;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 
@@ -51,11 +66,6 @@ body {
 }
 
 
-
-a{
-    text-decoration: none;
-}
-
 h3{
     font-size: 25px;
 }
@@ -63,10 +73,16 @@ h4{
     font-size:20px;
 }
 
-
-.img{
-    margin:20px;
-    width:300px;
-    
+a{
+  text-decoration:none;
 }
+
+
+.colorContainer {
+  background-color: #C9CEEC;
+  padding: 40px 0;
+  width: 100%;
+}
+
+
 

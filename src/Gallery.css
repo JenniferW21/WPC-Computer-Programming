@@ -1,33 +1,27 @@
 .gallery-container {
-  max-width: 600px; 
-  margin: 0 auto;
+  width:95%;
+  max-width: 800px; 
+  margin: 20px auto;
+  
 }
+
+.image-gallery-slide {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.image-gallery-slide .image-gallery-image {
+  width: 100%;
+  height: auto;                
+  object-fit: contain;   
+  background-color: #C9CEEC; 
+}
+
 
 .image-gallery-description {
   background: rgba(0, 0, 0, 0.7);
   bottom: 20px !important;
-  left: 34px !important;
 }
 
 
-.image-gallery-slide .image-gallery-image {
-  height: 400px; 
-  width:550px;
-  object-fit: contain;
-  background-color: transparent; 
-  
-}
-
-
-.image-gallery-thumbnail .image-gallery-thumbnail-image {
-  height: auto;
-  object-fit: cover;
-}
-
-
-
-.image-gallery-play-button {
-  left: 20px !important;
-  bottom: auto !important;
-  /* top: 20px !important; */
-}

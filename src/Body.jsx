@@ -7,6 +7,7 @@ import myPiano from './assets/piano.jpeg'
 import myAcrylic from './assets/acrylic.jpeg'
 import myPonyo from './assets/Ponyo.jpeg'
 import './App.css'
+import Head from "./Head";
 
 function Body(){
   const myHobbies = [
@@ -16,19 +17,26 @@ function Body(){
   ];
   return (
     <>
-    <div>
       {/* <Intro name="Jennifer"/>
       <Resume /> */}
-      <Projects />
-      <div className="colorContainer">
+    <div className="grid-container">
+      <div className="Head">
+        <Head title="ABOUT ME"/> 
+      </div>
+        
+      <div className="Projects">
+        <Projects/>
+      </div>
+
+      <div className="colorContainer Interest">
         <Interest hobbies={myHobbies}/>
       </div>
       
+      <div className="Footer">
+        <Footer/>
+      </div>
     </div>
 
-    <div>
-      <Footer />
-    </div>
     </>
 
   );
