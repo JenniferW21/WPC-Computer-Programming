@@ -4,7 +4,7 @@ body {
   background-color: #EFF0F9;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  color: #051319;
 }
 
 .gradient{
@@ -22,7 +22,9 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
-
+.container p{
+  font-size:20px;
+}
 
 .flex-container {
   display: flex;
@@ -45,6 +47,11 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .intro-card {
+    padding: 20px;
+  }
+}
 
 .title{
     margin: 0 0 10px 0;
@@ -65,13 +72,6 @@ body {
     flex:1;
 }
 
-
-h3{
-    font-size: 25px;
-}
-h4{
-    font-size:20px;
-}
 
 a{
   text-decoration:none;

@@ -8,7 +8,7 @@ function MyGallery({images}) {
 
   return (
     <div className="gallery-container">
-    <ImageGallery
+    <ImageGallery 
       ref={galleryRef}
       items={images}
       onSlide={(index) => console.log("Slid to", index)}

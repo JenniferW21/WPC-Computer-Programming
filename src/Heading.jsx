@@ -4,7 +4,6 @@ const styles = {
       color:"#051319", 
       fontSize:"30px", 
       padding:"100px",
-  
       },
 
     blue: { 

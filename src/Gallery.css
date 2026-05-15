@@ -1,19 +1,17 @@
 .gallery-container {
   width:95%;
-  max-width: 800px; 
-  margin: 20px auto;
-  
+  max-width: 1200px; 
 }
 
 .image-gallery-slide {
-  height: 400px;
-  display: flex;
+  height: 500px;
+  width: 50%;
   align-items: center;
 }
 
 .image-gallery-slide .image-gallery-image {
   width: 100%;
-  height: auto;                
+  height: 100%;                
   object-fit: contain;   
   background-color: #C9CEEC; 
 }
